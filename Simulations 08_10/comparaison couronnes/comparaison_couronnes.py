@@ -3,7 +3,7 @@
 
 # * importing packages
 
-# In[23]:
+# In[1]:
 
 
 from numpy import linspace, pi
@@ -20,7 +20,7 @@ from magforce import getF
 
 # * setting up figure size for notebook
 
-# In[24]:
+# In[2]:
 
 
 # make figures bigger on notebook
@@ -33,7 +33,7 @@ rcParams['figure.figsize'] = [width, height]
 # 
 # * the sample variable needs to be a dictionary for magforce's functions to work, and it must include the 'demagnetizing_factor', 'volume' and 'M_saturation' keys
 
-# In[25]:
+# In[3]:
 
 
 demagnetizing_factor = 1/3             # sphere
@@ -54,7 +54,7 @@ sample = {'demagnetizing_factor': demagnetizing_factor,
 #     * 30mm hauteur
 #     * suface du bas a z=0
 
-# In[26]:
+# In[4]:
 
 
 couronne_10_15_30_out = Cylinder(mag=[0, 0, 1300], 
@@ -75,7 +75,7 @@ couronne_10_15_30 = Collection(couronne_10_15_30_out, couronne_10_15_30_in)
 #     * 50mm hauteur
 #     * suface du bas a z=0
 
-# In[27]:
+# In[5]:
 
 
 couronne_10_20_50_out = Cylinder(mag=[0, 0, 1300], 
@@ -91,7 +91,7 @@ couronne_10_20_50 = Collection(couronne_10_20_50_out, couronne_10_20_50_in)
 
 # * comparaison les 2 couronnes dans l'axe
 
-# In[28]:
+# In[6]:
 
 
 # plot for couronne_10_15_30
@@ -104,7 +104,7 @@ plot_1D_along_z(x = 0,
                 saveCSV = False)
 
 
-# In[29]:
+# In[7]:
 
 
 # plot for couronne_10_20_50
@@ -117,7 +117,7 @@ plot_1D_along_z(x = 0,
                 saveCSV = False)
 
 
-# In[30]:
+# In[8]:
 
 
 # F for couronne_10_15_30 a 20mm de hauteur
@@ -136,7 +136,7 @@ print(f"F for couronne_10_20_50 a 20mm de hauteur: {f_20_couronne_10_20_50}")
 
 # * comparaison les 2 cylindres hors l'axe (2mm en x 2mm en y)
 
-# In[31]:
+# In[9]:
 
 
 # plot for couronne_10_15_30
@@ -149,7 +149,7 @@ plot_1D_along_z(x = 2,
                 saveCSV = False)
 
 
-# In[32]:
+# In[10]:
 
 
 # plot for couronne_10_20_50
@@ -162,7 +162,7 @@ plot_1D_along_z(x = 2,
                 saveCSV = False)
 
 
-# In[33]:
+# In[11]:
 
 
 # F for couronne_10_15_30 a 20mm de hauteur

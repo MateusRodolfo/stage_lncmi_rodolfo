@@ -3,7 +3,7 @@
 
 # * importing packages
 
-# In[17]:
+# In[1]:
 
 
 from numpy import linspace, pi
@@ -20,7 +20,7 @@ from magforce import getF
 
 # * setting up figure size for notebook
 
-# In[18]:
+# In[2]:
 
 
 # make figures bigger on notebook
@@ -33,7 +33,7 @@ rcParams['figure.figsize'] = [width, height]
 # 
 # * the sample variable needs to be a dictionary for magforce's functions to work, and it must include the 'demagnetizing_factor', 'volume' and 'M_saturation' keys
 
-# In[19]:
+# In[3]:
 
 
 demagnetizing_factor = 1/3             # sphere
@@ -54,7 +54,7 @@ sample = {'demagnetizing_factor': demagnetizing_factor,
 #     * 50mm hauteur
 #     * suface du bas a z=25
 
-# In[20]:
+# In[4]:
 
 
 couronne_10_20_50_out = Cylinder(mag=[0, 0, 1300], 
@@ -70,7 +70,7 @@ couronne_10_20_50 = Collection(couronne_10_20_50_out, couronne_10_20_50_in)
 
 # * 4 aimants diagonal
 
-# In[21]:
+# In[5]:
 
 
 m1 = Cylinder(mag = [0, 0, 1300],
@@ -128,7 +128,7 @@ m4.rotate(angle = 315,
 dh = Collection(m1, m2, m3, m4)
 
 
-# In[22]:
+# In[6]:
 
 
 cou_4h = Collection(dh, couronne_10_20_50)
@@ -137,10 +137,10 @@ displaySystem(cou_4h, direc=True)
 
 # * etude dans l'axe
 
-# In[23]:
+# In[7]:
 
 
-# plot for couronne_10_20_50
+# plot for couronne + 4 aimants em diagonal en haut; dans l'axe
 plot_1D_along_z(x = 0, 
                 y = 0, 
                 zs = linspace(-10, 10, 1000), 
@@ -152,10 +152,10 @@ plot_1D_along_z(x = 0,
 
 # * etude hors l'axe (2mm en x 2mm en y)
 
-# In[24]:
+# In[8]:
 
 
-# plot for couronne_10_20_50
+# plot for couronne + 4 aimants em diagonal en haut; hors l'axe
 plot_1D_along_z(x = 2, 
                 y = 2, 
                 zs = linspace(-10, 10, 1000), 

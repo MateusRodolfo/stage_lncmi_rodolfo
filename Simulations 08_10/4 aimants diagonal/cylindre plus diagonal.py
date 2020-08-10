@@ -63,7 +63,7 @@ cylindre_20_50 = Cylinder(mag=[0, 0, 1300],
 
 # * 4 aimants diagonal
 
-# In[8]:
+# In[5]:
 
 
 m1 = Cylinder(mag = [0, 0, 1300],
@@ -121,7 +121,7 @@ m4.rotate(angle = 45,
 db = Collection(m1, m2, m3, m4)
 
 
-# In[9]:
+# In[6]:
 
 
 cyl_4b = Collection(db, cylindre_20_50)
@@ -130,10 +130,10 @@ displaySystem(cyl_4b, direc=True)
 
 # * etude dans l'axe
 
-# In[10]:
+# In[7]:
 
 
-# plot for couronne_10_20_50
+# plot for cylindre + 4 aimants em diagonal en bas; dans l'axe
 plot_1D_along_z(x = 0, 
                 y = 0, 
                 zs = linspace(-10, 10, 1000), 
@@ -145,10 +145,10 @@ plot_1D_along_z(x = 0,
 
 # * etude hors l'axe (2mm en x 2mm en y)
 
-# In[11]:
+# In[8]:
 
 
-# plot for couronne_10_20_50
+# plot for cylindre + 4 aimants em diagonal en bas; hors l'axe
 plot_1D_along_z(x = 2, 
                 y = 2, 
                 zs = linspace(-10, 10, 1000), 
