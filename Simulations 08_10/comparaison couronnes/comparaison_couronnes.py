@@ -101,7 +101,8 @@ plot_1D_along_z(x = 0,
                 collection = couronne_10_15_30, 
                 sample = sample, 
                 BF = 'F', 
-                saveCSV = False)
+                saveCSV = False,
+                figDetail='couronne_10_15_30')
 
 
 # In[7]:
@@ -114,7 +115,8 @@ plot_1D_along_z(x = 0,
                 collection = couronne_10_20_50, 
                 sample = sample, 
                 BF = 'F', 
-                saveCSV = False)
+                saveCSV = False,
+                figDetail='couronne_10_20_50')
 
 
 # In[8]:
@@ -146,7 +148,8 @@ plot_1D_along_z(x = 2,
                 collection = couronne_10_15_30, 
                 sample = sample, 
                 BF = 'F', 
-                saveCSV = False)
+                saveCSV = False,
+                figDetail='couronne_10_15_30')
 
 
 # In[10]:
@@ -159,7 +162,8 @@ plot_1D_along_z(x = 2,
                 collection = couronne_10_20_50, 
                 sample = sample, 
                 BF = 'F', 
-                saveCSV = False)
+                saveCSV = False,
+                figDetail='couronne_10_20_50')
 
 
 # In[11]:
@@ -178,9 +182,4 @@ f_20_couronne_10_20_50 = getF(point = [2, 2, -20],
 print(f"F for couronne_10_15_30 a 20mm de hauteur: {f_20_couronne_10_15_30}")
 print(f"F for couronne_10_20_50 a 20mm de hauteur: {f_20_couronne_10_20_50}")
 
-
-# In[ ]:
-
-
-
-
+show()

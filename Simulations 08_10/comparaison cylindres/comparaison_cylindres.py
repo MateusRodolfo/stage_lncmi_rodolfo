@@ -87,7 +87,8 @@ plot_1D_along_z(x = 0,
                 collection = cylindre_10_30, 
                 sample = sample, 
                 BF = 'F', 
-                saveCSV = False)
+                saveCSV = False,
+                figDetail='cylindre_10_30')
 
 
 # In[7]:
@@ -100,7 +101,8 @@ plot_1D_along_z(x = 0,
                 collection = cylindre_20_50, 
                 sample = sample, 
                 BF = 'F', 
-                saveCSV = False)
+                saveCSV = False,
+                figDetail='cylindre_20_50')
 
 
 # In[8]:
@@ -132,7 +134,8 @@ plot_1D_along_z(x = 2,
                 collection = cylindre_10_30, 
                 sample = sample, 
                 BF = 'F', 
-                saveCSV = False)
+                saveCSV = False,
+                figDetail='cylindre_10_30')
 
 
 # In[10]:
@@ -145,7 +148,8 @@ plot_1D_along_z(x = 2,
                 collection = cylindre_20_50, 
                 sample = sample, 
                 BF = 'F', 
-                saveCSV = False)
+                saveCSV = False,
+                figDetail='cylindre_20_50')
 
 
 # In[11]:
@@ -164,9 +168,4 @@ f_20_cylindre_20_50 = getF(point = [2, 2, 20],
 print(f"F for cylindre_10_30 a 20mm de hauteur: {f_20_cylindre_10_30}")
 print(f"F for cylindre_20_50 a 20mm de hauteur: {f_20_cylindre_20_50}")
 
-
-# In[ ]:
-
-
-
-
+show()

@@ -132,7 +132,7 @@ dh = Collection(m1, m2, m3, m4)
 
 
 cou_4h = Collection(dh, couronne_10_20_50)
-displaySystem(cou_4h, direc=True)
+displaySystem(cou_4h, direc=True, suppress=True)
 
 
 # * etude dans l'axe
@@ -147,7 +147,8 @@ plot_1D_along_z(x = 0,
                 collection = cou_4h, 
                 sample = sample, 
                 BF = 'F', 
-                saveCSV = False)
+                saveCSV = False,
+                figDetail='cou_4h')
 
 
 # * etude hors l'axe (2mm en x 2mm en y)
@@ -162,11 +163,7 @@ plot_1D_along_z(x = 2,
                 collection = cou_4h, 
                 sample = sample, 
                 BF = 'F', 
-                saveCSV = False)
+                saveCSV = False,
+                figDetail='cou_4h')
 
-
-# In[ ]:
-
-
-
-
+show()

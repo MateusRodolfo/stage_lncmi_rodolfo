@@ -125,7 +125,7 @@ db = Collection(m1, m2, m3, m4)
 
 
 cyl_4b = Collection(db, cylindre_20_50)
-displaySystem(cyl_4b, direc=True)
+displaySystem(cyl_4b, direc=True, suppress=True)
 
 
 # * etude dans l'axe
@@ -140,7 +140,8 @@ plot_1D_along_z(x = 0,
                 collection = cyl_4b, 
                 sample = sample, 
                 BF = 'F', 
-                saveCSV = False)
+                saveCSV = False,
+                figDetail='cyl_4b')
 
 
 # * etude hors l'axe (2mm en x 2mm en y)
@@ -155,11 +156,7 @@ plot_1D_along_z(x = 2,
                 collection = cyl_4b, 
                 sample = sample, 
                 BF = 'F', 
-                saveCSV = False)
+                saveCSV = False,
+                figDetail='cyl_4b')
 
-
-# In[ ]:
-
-
-
-
+show()

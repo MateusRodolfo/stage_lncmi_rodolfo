@@ -112,7 +112,7 @@ couronne_10_20_50_b = Collection(couronne_10_20_50_b_out, couronne_10_20_50_b_in
 
 cyl_cou_h = Collection(cylindre_20_50, couronne_10_20_50_h)
 
-displaySystem(cyl_cou_h, direc=True)
+displaySystem(cyl_cou_h, direc=True, suppress=True)
 
 
 # In[49]:
@@ -120,7 +120,7 @@ displaySystem(cyl_cou_h, direc=True)
 
 cyl_cou_b = Collection(cylindre_20_50, couronne_10_20_50_b)
 
-displaySystem(cyl_cou_b, direc=True)
+displaySystem(cyl_cou_b, direc=True, suppress=True)
 
 
 # * etude dans l'axe
@@ -135,7 +135,8 @@ plot_1D_along_z(x = 0,
                 collection = cyl_cou_h, 
                 sample = sample, 
                 BF = 'F', 
-                saveCSV = False)
+                saveCSV = False,
+                figDetail='cyl_cou_h')
 
 
 # In[51]:
@@ -148,7 +149,8 @@ plot_1D_along_z(x = 0,
                 collection = cyl_cou_b, 
                 sample = sample, 
                 BF = 'F', 
-                saveCSV = False)
+                saveCSV = False,
+                figDetail='cyl_cou_b')
 
 
 # * etude hors l'axe (2mm en x 2mm en y)
@@ -163,7 +165,8 @@ plot_1D_along_z(x = 2,
                 collection = cyl_cou_h, 
                 sample = sample, 
                 BF = 'F', 
-                saveCSV = False)
+                saveCSV = False,
+                figDetail='cyl_cou_h')
 
 
 # In[53]:
@@ -176,11 +179,7 @@ plot_1D_along_z(x = 2,
                 collection = cyl_cou_b, 
                 sample = sample, 
                 BF = 'F', 
-                saveCSV = False)
+                saveCSV = False,
+                figDetail='cyl_cou_b')
 
-
-# In[ ]:
-
-
-
-
+show()
